@@ -1,3 +1,8 @@
 <resources>
-    <string name="app_name">MaterialComonentsDemo</string>
+    <string name="app_name">MaterialComponentsDemo</string>
+
+    <string name="csv_download_confirmation">You’re about to download a CSV file.</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+
 </resources>

@@ -1,8 +1,7 @@
-package com.egecius.materialcomonentsdemo
+package com.egecius.materialcomponentsdemo
 
 import android.os.Bundle
 import android.view.View
-import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
@@ -13,12 +12,13 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun showAlertDialog(view: View) {
-        AlertDialog.Builder(this)
-            .setMessage("Do you want to take your action?")
-            .setPositiveButton("Ok", null)
-            .setNegativeButton("Cancel") { dialog, _ ->
-                dialog.cancel()
+        android.app.AlertDialog.Builder(this)
+            .setMessage(R.string.csv_download_confirmation)
+            .setPositiveButton(R.string.ok) { _, _ ->
+                // no
             }
-            .show()
+            .setNegativeButton(R.string.cancel) { dialog, _ ->
+                dialog.cancel()
+            }.show()
     }
 }

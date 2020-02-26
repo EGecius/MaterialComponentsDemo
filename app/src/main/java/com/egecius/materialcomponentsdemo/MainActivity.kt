@@ -2,6 +2,7 @@ package com.egecius.materialcomponentsdemo
 
 import android.os.Bundle
 import android.view.View
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
@@ -12,7 +13,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun showAlertDialog(view: View) {
-        android.app.AlertDialog.Builder(this)
+        AlertDialog.Builder(this)
             .setMessage(R.string.csv_download_confirmation)
             .setPositiveButton(R.string.ok) { _, _ ->
                 // no

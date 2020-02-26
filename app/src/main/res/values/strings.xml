@@ -4,5 +4,8 @@
     <string name="csv_download_confirmation">You’re about to download a CSV file.</string>
     <string name="ok">OK</string>
     <string name="cancel">Cancel</string>
+    <string name="download_saved_msg">This file will be saved in your downloads folder.</string>
+    <string name="downloads">Downloads</string>
+
 
 </resources>

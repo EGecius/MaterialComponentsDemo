@@ -6,6 +6,7 @@
     <string name="cancel">Cancel</string>
     <string name="download_saved_msg">This file will be saved in your downloads folder.</string>
     <string name="downloads">Downloads</string>
+    <string name="select_a_payment_type">Select a payment type</string>
 
 
 </resources>

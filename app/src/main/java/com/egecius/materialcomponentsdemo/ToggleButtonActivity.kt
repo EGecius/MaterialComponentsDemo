@@ -36,6 +36,8 @@ class ToggleButtonActivity : AppCompatActivity() {
                             "Eg:ToggleButtonActivity:38",
                             "setClickListener() toggleButton.checkedButtonId: ${toggleButton.checkedButtonId}"
                         )
+                        val view = toggleButton.findViewById(toggleButton.checkedButtonId) as Button
+                        Log.d("Eg:ToggleButtonActivity:40", "setClickListener() view.text: ${view.text}")
                     }
                 }
             }

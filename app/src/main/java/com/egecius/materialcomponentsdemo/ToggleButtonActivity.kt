@@ -5,6 +5,8 @@ package com.egecius.materialcomponentsdemo
 import android.annotation.SuppressLint
 import android.os.Bundle
 import android.util.Log
+import android.view.LayoutInflater
+import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_toggle_button.*
 
@@ -13,6 +15,7 @@ class ToggleButtonActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_toggle_button)
+        addButtonsProgrammatically()
         setClickListener()
     }
 
@@ -35,5 +38,11 @@ class ToggleButtonActivity : AppCompatActivity() {
             }
             // Respond to button selection
         }
+    }
+
+    private fun addButtonsProgrammatically() {
+        val button = layoutInflater.inflate(R.layout.button, root_view, false) as Button
+        button.text = "set programmatically"
+        toggleButton.addView(button)
     }
 }

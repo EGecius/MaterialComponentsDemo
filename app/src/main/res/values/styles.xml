@@ -6,6 +6,10 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="materialButtonStyle">@style/PsMaterialButton</item>
+    </style>
+
+    <style name="PsMaterialButton" parent="@style/Widget.MaterialComponents.Button.UnelevatedButton">
         <item name="shapeAppearanceSmallComponent">@style/PsShapeAppearanceSmallComponent</item>
     </style>
 
